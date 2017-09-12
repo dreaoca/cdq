@@ -1,0 +1,211 @@
+<html>
+
+<head>
+    <title>Click To Copy</title>
+    <link rel="icon" type="image/gif" href="images/iconpink.png" />
+    <link href="clickbuttons.css" rel="stylesheet" type="text/css" media="all" />
+    <script src="dist/clipboard.min.js"></script>
+    <script src="irazu.js"></script>
+
+    <div class="embed-nav group" id="embed-nav">
+        <ul>
+            <li>
+                <a href="#" style="display:none;">
+          First Link
+        </a>
+            </li>
+            <li>
+                <a href="#" style="display:none;">
+          Second Link
+        </a>
+            </li>
+            <li>
+                <a href="#" style="display:none;">
+          Third Link
+        </a>
+            </li>
+            <li>
+                <div>
+                    <a href="https://www.cleverbridge.com/" target="_blank">
+        <img src="images/Capture.png" width="160" height="40"></a></div>
+            </li>
+
+        </ul>
+    </div>
+
+</head>
+
+<body>
+
+    <button class="btn" data-clipboard-text="Dear <BillingFirstName> <BillingLastName>,
+
+Thank you for your message.
+
+To reinstall your license of <FirstProductName> you will need to contact the software publisher, <ConfigurationClientName>, and have them reset your license. Once the license has been reset, you can reinstall the software using the directions on your order confirmation page:
+
+<ConfirmationPage>
+
+The software publisher can be contacted using the information below:
+
+<ClientContact> ">
+    RRQ 30 days Expired</button>
+
+    <button class="btn" data-clipboard-text="Dear <BillingFirstName> <BillingLastName>,
+
+Our records indicate that we sent you an e-mail on <EmailDateInvoice>, which included all pertinent information regarding your order. However, clicking on the link below directs you to a web page containing all order related information.
+
+<ConfirmationPage>
+
+IMPORTANT: If you didn’t receive our confirmation mail after your purchase, most likely it was filtered by your Internet Service Provider into your Spam or Junk Mail folder. If this is the case, please contact your provider to point out that this valid e-mail was erroneously marked as spam.">
+    Delivery Missing</button>
+
+    <button class="btn" data-clipboard-text="Dear <BillingFirstName> <BillingLastName>,
+
+Please use the following link to view all information concerning your order:
+
+<ConfirmationPage>
+
+This website contains your personalized registration information, which you can use to install your software, as well as the receipt for your order.
+
+Should you be unable to use the product for technical reasons, please contact the software manufacturer directly for technical assistance at:
+
+<ClientContact>">
+    Redelivery Allowed</button>
+
+    <button class="btn" data-clipboard-text="Dear <BillingFirstName> <BillingLastName>,
+
+Thank you for your e-mail.
+
+For your order under reference number <ReferenceNo>, a cancellation is not necessary.
+
+This product is neither a subscription nor a license that needs to be renewed.
+
+If you have any further questions regarding the validity period of your product, please contact the software producer, <ConfigurationClientName>, at the following address:
+
+<ClientContact>">
+    No Subscription</button>
+
+    <button class="btn" data-clipboard-text="Dear <BillingFirstName> <BillingLastName>,
+
+cleverbridge is the e-commerce partner for a number of online businesses and therefore our name appears on credit card statements in place of the company from whom you purchased the product. Our records indicate that on <PurchaseDate> an order was placed for <FirstProductName>. You should have received an e-mail confirmation with a receipt and all order related information. However, this information can also be referenced at:
+
+<ConfirmationPage>
+
+If you and the members of your household do not recognize the charge, feel free to contact us again so we can assist you in resolving this issue.">
+    Charge Unknown</button>
+
+    <button class="btn" data-clipboard-text="Dear <BillingFirstName>,
+
+Thank you for your message.
+
+Please note that cleverbridge is the e-commerce partner of <ConfigurationClientName> and handles order and payment-related inquiries.
+
+For installation, technical or product-related inquiries, please contact the software publisher directly at:
+
+<ClientContact>">
+    Tech Support</button>
+
+    <button class="btn" data-clipboard-text="Dear <BillingFirstName>,
+
+Thank you for your message.
+
+cleverbridge is the e-commerce partner of <ConfigurationClientName> and takes care of payment and order processing issues.
+
+The software publisher offers excellent support for any questions about the product itself or problems you may be experiencing. Many inquiries can be cleared up quickly and easily so that you can use the software you purchased to the fullest.
+
+The software publisher can be contacted directly at:
+
+<ClientContact>
+
+However, if you do not wish to receive technical support or if the support did not resolve your problem, we will be happy to initiate the refund process in accordance with the software publisher's refund policy.
+
+If that is the case, please confirm this to us.">
+    RRQ-Tech Support First</button>
+
+    <button class="btn" data-clipboard-text="Dear <BillingFirstName> <BillingLastName>,
+
+Thank you for your message.
+
+To reinstall your license of <FirstProductName> you will need to contact the software publisher, <ConfigurationClientName>, and have them reset your license. Once the license has been reset, you can reinstall the software using the directions on your order confirmation page:
+
+<ConfirmationPage>
+
+The software publisher can be contacted using the information below:
+
+<ClientContact> ">
+    Tech Support-Lic Key</button>
+
+    <button class="btn" data-clipboard-text="&x-ordersteps=" style="display:none;">
+    Order Steps x-param</button>
+
+    <button class="btn" data-clipboard-text="&x-globalizer=" style="display:none;">
+    Globalizer x-param</button>
+
+    <button class="btn" data-clipboard-text="&x-submitcolor=" style="display:none;">
+    Submit Color x-param</button>
+
+    <button class="btn" data-clipboard-text="&x- addcolor=" style="display:none;">
+    Add Color x-param</button>
+
+    <button class="btn" data-clipboard-text="&x-orderstepcolor=" style="display:none;">
+    Order Step color x-param</button>
+
+    <button class="btn" data-clipboard-text="&x-paymentoptions=" style="display:none;">
+    Payment Options x-param</button>
+
+    <button class="btn" data-clipboard-text="&x-clienturl=" style="display:none;">
+    Client URL x-param</button>
+
+
+
+    <script>
+        var btns = document.querySelectorAll('button');
+        var clipboard = new Clipboard(btns);
+        clipboard.on('success', function(e) {
+            console.log(e);
+        });
+        clipboard.on('error', function(e) {
+            console.log(e);
+        });
+    </script>
+
+
+
+
+
+    <script type="text/javascript">
+        add hover state:
+            $(document).ready(function() {
+                setTimeout(function() {
+                    $('#ZeroClipboardMovie_1').parent().mouseover(function() {
+                        $('a.fulfilmentContentLink').toggleClass('copy_hover');
+                    });
+                }, 1000);
+            });​
+
+        License code(s): < span id = "CopyData104630" > XXXXXX < /span>
+
+            <
+            div id = "CopyArea104630"
+        class = "CBNoJSFold CBJSFold" >
+
+            <
+            span class = "fulfilmentContentLink" >
+            <
+            a class = "fulfilmentContentLink"
+        href = "javascript:;"
+        id = "CopyButton104630"
+        title = "Click to select the license code and press Ctrl+C to copy it to your clipboard" > Select license code < /a> <
+            /span> <
+            /div>
+
+            <
+            div id = "CopyInfo104630"
+        class = "CBJSFold" >
+            Select the license code and press Ctrl + C to copy it to your clipboard. <
+            /div>
+    </script>
+
+</body>
+
+</html>
